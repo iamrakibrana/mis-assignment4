@@ -1,0 +1,139 @@
+#flex-container {
+  color: #717473;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-left: 7px;
+  
+  }
+  #image {
+    display: flex;
+    padding-top: 120px;
+    padding-left: 140px;
+    text-align: center;
+    position: absolute;
+    justify-content: center;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+    border: 5px black;
+    padding: 10px;
+  }
+  .card-body {
+    margin-inline: 5px;
+  }
+  .col {
+    margin-top: 20px;
+  }
+
+
+
+  h2 {
+    font-size: 10vmin;
+    line-height: 1.1;
+  }
+  body {
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    font-family: system-ui;
+    font-size: min(200%, 5vmin);
+  }
+  h2, p, body {
+    margin: 0;
+  }
+  
+  p {
+    font-family: "Dank Mono", ui-monospace, monospace;
+  }
+  
+  html {
+    block-size: 100%;
+    inline-size: 100%;
+  }
+
+  
+  #search {
+    margin-top: 15px;
+    width: 15rem;
+    text-align: center;
+    transition: all var(--dur) var(--bez);
+    position: relative;
+    z-index: 1;
+  }
+  #search:hover {
+    transform: scale(1.1);
+    transition: .3s;
+  }
+  .display {
+    
+    background-color: gray;
+    position: relative;
+    margin-top: 5px;
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    transition: .3s;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    overflow: hidden;
+    z-index: 1;
+  }
+  #search:not(:placeholder-shown) {
+    border-radius: var(--rad) 0 0 var(--rad);
+    width: calc(100% - var(--btn-width));
+  }
+  .display:not(:placeholder-shown) {
+    border-radius: var(--rad) 0 0 var(--rad);
+    width: calc(100% - var(--btn-width));
+  }
+ 
+  .display:hover {
+    background-color: rgb(8, 46, 70);
+    color: rgb(255, 255, 255);
+    transform: scale(.9);
+  }
+  .more {
+    background-color: rgb(255, 251, 228);
+    position: relative;
+    margin-top: 5px;
+    text-decoration: none;
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    transition: .3s;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .more:hover {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    transform: scale(.9);
+  }
+  .container-fluid {
+    margin-top: 5px;
+    text-decoration: none;
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+  }
+  .abc {
+    display: grid;
+    justify-content: center;
+
+  }
